@@ -6,12 +6,12 @@
     <script type="text/javascript" src=".resource/js/jquery-1.11.3.min.js" ></script>
     <script type="text/javascript" src=".resource/js/mirror.js" ></script>
     <script type="text/javascript" src=".resource/js/main.js" ></script>
-    
+    <script type="text/javascript" src=".resource/js/web.js"></script>
+
     <title>欢迎访问SEUITE开源镜像站</title>
 </head>
 
 <body>
-
 <h1>欢迎访问SEUITE开源镜像站</h1>
 
 <table id="distro-table" cellpadding="0" cellspacing="0">
@@ -33,8 +33,8 @@
             <th>使用帮助</th>
         </tr>
     </thead>
-    
-    <tbody>
+
+    <tbody id="inner-table">
         <tr class="odd">
             <td><a href="/centos/">centos/</a></td>
             <td class="centos update-time">N/A</td>
@@ -69,9 +69,10 @@
         </tr>
     </tbody>
 </table>
+<script>modify()</script>
 <div id="footer">
     <a target="_blank" href="http://club.seu.services/intro/mirrorstation">相关文档</a>
-    <a target="_blank" href="https://github.com/seu-ite/">Github/SEU-ITE</a>
+    <a target="_blank" href="https://github.com/seuite/">Github/SEUITE</a>
 </div>
 
 </body>
