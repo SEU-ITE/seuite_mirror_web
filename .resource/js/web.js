@@ -1,3 +1,22 @@
+$(document).ready(function ()
+{
+    var button = document.createElement("input");
+    button.type = "button"
+    button.value = "Hanyuu Test Button"
+    button.id = "HanyuuButton"
+    button.id = "click";
+    button.addEventListener("click", function ()
+    {
+        $.getJSON("res.json", function (resList)
+        {
+            $.each(resList, function (i)
+            {
+
+            });
+        });
+    });
+    document.getElementById("title").appendChild(button);
+})
 function modify()
 {
     try
