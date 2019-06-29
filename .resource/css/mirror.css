@@ -2,7 +2,7 @@
  * * Copyright (c) 2009, Netease corp.
  * * This work is under Creative Common Attribution 2.5 China Mainland License.
  * */
-body{
+ body{
     font-family:"Bitstream Vera Sans","Lucida Grande", Verdana, Lucida, sans-serif;
     font-size: .9em;
     margin: 0px 20px;
@@ -64,6 +64,17 @@ h1, h3 {
 }
 .hr hr {
     display: none;
+}
+.btn{
+    background-color:#5bc0de;
+    color:white;
+    border-color:#46b8da;
+}
+#myModal{
+    margin-bottom:0.5em;
+}
+.nav-tabs>li{
+    border-radius:4px 4px 0 0;
 }
 #footer {
     text-align: center;
