@@ -6,36 +6,66 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Ubuntu 镜像使用帮助</title>
     <link rel="stylesheet" type="text/css" href="/.resource/css/mirror.css" media="screen" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <script type="text/javascript" src="/.resource/js/jquery-1.11.3.min.js" ></script>
     <script type="text/javascript" src="/.resource/js/helptool.js"></script>
 </head>
 
 <body>
-
-    <h1>Ubuntu 镜像使用帮助</h1>
-
-    <div id="mirror-data">
-        <h3>收录架构</h3>
-        <ul>
-            <li>i386</li>
-            <li>x86_64</li>
-        </ul>
-        <h3>收录版本</h3>
-        <ul>
-            <li>12.04 LTS</li>
-            <li>14.04 LTS</li>
-            <li>16.04 LTS</li>
-            <li>15.04</li>
-            <li>16.10</li>
-            <li>17.04</li>
+<div class="jumbotron">
+    <a class = "text-dark" href="../index.html">
+        <h1>SEUITE开源镜像站</h1>
+    </a>
+</div>
+<div class="row">
+    <div class="col-2">
+        <ul class="nav flex-column nav-pills nav-stacked">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="centos.html">Centos/Redhat</a>
+            </li>
+            <li class="">
+                <a class="nav-link" data-toggle="pill" href="epel.html">EPEL</a>
+            </li>
+            <li class="">
+                <a class="nav-link  active" data-toggle="pill" href="ubuntu.html">Ubuntu</a>
+            </li>
+            <li class="">
+                <a class="nav-link" data-toggle="pill" href="deepin.html">deepin</a>
+            </li>
+            <li class="">
+                <a class="nav-link" data-toggle="pill" href="seulon.html">seulon</a>
+            </li>
         </ul>
     </div>
-
-    <div>
-        <h3>使用说明</h3>
-        <p>Ubuntu 的软件源配置文件是
-            <code>/etc/apt/sources.list</code>。将该文件替换为下面内容（替换前做好备份），即可使用软件源镜像。</p>
-
+    <div class="col-10">
+        <div class="card">
+            <div class="card-header">
+                <h2>Ubuntu 镜像使用帮助</h2>
+            </div>
+        </div>
+        <div id="mirror-data">
+            <h3>收录架构</h3>
+            <ul>
+                <li>i386</li>
+                <li>x86_64</li>
+            </ul>
+            <h3>收录版本</h3>
+            <ul>
+                <li>12.04 LTS</li>
+                <li>14.04 LTS</li>
+                <li>16.04 LTS</li>
+                <li>15.04</li>
+                <li>16.10</li>
+                <li>17.04</li>
+            </ul>   
+        </div>
+        <div>
+            <h3>使用说明</h3>
+            <p>Ubuntu 的软件源配置文件是
+                <code>/etc/apt/sources.list</code>。将该文件替换为下面内容（替换前做好备份），即可使用软件源镜像。
+            </p>
+        </div>
         <form>
             <div>
                 <label>选择你的Ubuntu版本: </label>
@@ -49,9 +79,7 @@
                 </select>
             </div>
         </form>
-
         <p></p>
-
         <pre># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb http://mirrors.seu.services/ubuntu/ <code class="release">xenial</code> main restricted universe multiverse
 # deb-src http://mirrors.seu.services/ubuntu/ <code class="release">xenial</code> main restricted universe multiverse
@@ -65,11 +93,16 @@ deb http://mirrors.seu.services/ubuntu/ <code class="release">xenial</code>-secu
 # 预发布软件源，不建议启用
 # deb http://mirrors.seu.services/ubuntu/ <code class="release">xenial</code>-proposed main restricted universe multiverse
 # deb-src http://mirrors.seu.services/ubuntu/ <code class="release">xenial</code>-proposed main restricted universe multiverse</pre>
-
         <p></p>
         <p></p>
     </div>
-
+</div>
+<div class="card-footer py-5 bg-dark">
+    <div class="container text-center">
+        <a class="m-0 text-white" target="_blank" href="http://club.seu.services/intro/mirrorstation">相关文档</a>
+        <a class="m-0 text-white" target="_blank" href="https://github.com/seuite/">Github/SEUITE</a><brr></br>
+        <a class="m-0 text-white">Copyright &copy; SEUITE 2019</a>
+    </div>
+</div>
 </body>
-
 </html>
